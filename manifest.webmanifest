@@ -1,0 +1,9 @@
+{
+  "name": "Block City",
+  "short_name": "Block City",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#101827",
+  "icons": []
+}

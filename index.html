@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#101827">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Block City</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell" aria-label="Block City game">
+      <canvas id="game" width="960" height="540" aria-label="Block City map"></canvas>
+
+      <section id="title-screen" class="title-screen">
+        <div class="title-card">
+          <p class="kicker">NIGHT SHIFT</p>
+          <h1>BLOCK<br>CITY</h1>
+          <p class="tagline">Run the streets. Finish the job.</p>
+          <button id="start-button" type="button">Start game</button>
+        </div>
+      </section>
+
+      <section class="hud" aria-live="polite">
+        <div class="hud-left">
+          <span id="cash">$000</span>
+          <span id="mission-count">0 jobs</span>
+        </div>
+        <div class="hud-right">
+          <span>HEAT</span>
+          <span id="heat" class="heat-pips" aria-label="Heat level">○ ○ ○</span>
+        </div>
+      </section>
+
+      <section id="message" class="message" aria-live="polite"></section>
+
+      <section class="touch-controls" aria-label="Touch controls">
+        <div class="drive-pad">
+          <button class="control up" data-key="ArrowUp" aria-label="Forward">▲</button>
+          <button class="control left" data-key="ArrowLeft" aria-label="Left">◀</button>
+          <button class="control down" data-key="ArrowDown" aria-label="Reverse">▼</button>
+          <button class="control right" data-key="ArrowRight" aria-label="Right">▶</button>
+        </div>
+        <button id="action-button" class="action-button" type="button">ACTION</button>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
